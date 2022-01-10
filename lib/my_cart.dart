@@ -1,4 +1,5 @@
 import 'package:fifth_flutter_app/my_controller.dart';
+import 'package:fifth_flutter_app/total_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -104,11 +105,13 @@ class MyCart extends StatelessWidget {
                   ),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
+                      //elvated button 색 바꾸기
+                      primary: Colors.blue.shade900,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30)
                       ),
                     ),
-                    onPressed: (){},
+                    onPressed: ()=>Get.to(()=>TotalPage()),
                     child: Text("Total",
                     style: TextStyle(fontSize: 30,color: Colors.white),),
                   ),
